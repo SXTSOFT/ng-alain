@@ -135,10 +135,10 @@
       <nz-tab nzTitle="操作日志三"></nz-tab>
     </nz-tabset>
   </nz-card-tab>
-  <simple-table [columns]="opColumns" [data]="list">
+  <st [columns]="opColumns" [data]="list">
     <ng-template st-row="status" let-i>
       <nz-badge *ngIf="i.status === 'success'" [nzStatus]="'success'" [nzText]="'成功'"></nz-badge>
       <nz-badge *ngIf="i.status !== 'success'" [nzStatus]="'processing'" [nzText]="'进行中'"></nz-badge>
     </ng-template>
-  </simple-table>
+  </st>
 </nz-card>

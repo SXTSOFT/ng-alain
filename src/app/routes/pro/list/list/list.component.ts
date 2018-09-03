@@ -1,6 +1,6 @@
 import { Component, ViewChild, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { PageHeaderComponent } from '@delon/abc';
+import { NaPageHeaderComponent } from '@delon/abc';
 
 @Component({
   // tslint:disable-next-line:component-selector
@@ -23,7 +23,8 @@ export class ProListLayoutComponent implements OnInit {
     },
   ];
 
-  @ViewChild('ph') ph: PageHeaderComponent;
+  @ViewChild('ph')
+  ph: NaPageHeaderComponent;
 
   pos = 0;
 
