@@ -1,4 +1,4 @@
-<div class="content__title">
+<div class="alain-default__content-title">
   <h1>门店</h1>
   <button nz-button (click)="add()" [nzType]="'primary'">添加</button>
 </div>
@@ -31,4 +31,4 @@
     </nz-form-control>
   </nz-form-item>
 </form>
-<st #st class="bg-white" [columns]="columns" [data]="url" [extraParams]="s"></st>
+<st #st class="bg-white" [columns]="columns" [data]="url" [req]="{params: s}"></st>

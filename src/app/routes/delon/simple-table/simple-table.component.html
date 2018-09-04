@@ -1,4 +1,4 @@
-<div class="content__title">
+<div class="alain-default__content-title">
   <h1>
     Fullscreen Table
     <small>使用
@@ -42,7 +42,7 @@
         </div>
       </div>
     </div>
-    <st #st [data]="url" [extraParams]="args" [resReName]="{list: 'results' }" [total]="total" [ps]="ps" [columns]="columns"
+    <st #st [data]="url" [req]="{params: args}" [res]="{ reName: {list: 'results' } }" [total]="total" [ps]="ps" [columns]="columns"
       [scroll]="scroll">
       <ng-template st-row="events" let-item let-index="index">
         <g2-mini-bar height="15" theme="mini" color="#999" borderWidth="3" [padding]="[0, 0, 0, 0]" [data]="events"></g2-mini-bar>
